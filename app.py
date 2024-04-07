@@ -3,6 +3,10 @@ import plotly.express as px
 import streamlit as st
 
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
+
+#Header
+st.header("Sprint 5: Herramientas de desarrollo de software")
+
 #hist_button = st.button('Construir histograma') # crear un botón
 
 #if hist_button: # al hacer clic en el botón
@@ -22,8 +26,11 @@ option_scatter = st.checkbox('Gráfico de Dispersión')
 # Generar gráfico basado en la selección del usuario
 if option_histogram:
     st.subheader("Histograma")
-    fig_hist = px.histogram(car_data, x='price', title='Distribución de Precios')
-    st.plotly_chart(fig_hist)
+    fig_hist_1 = px.histogram(car_data, x='price', title='Distribución de Precios')
+    st.plotly_chart(fig_hist_1)
+    #Segundo histograma
+    fig_hist_2 = px.histogram(car_data, x="odometer", title='Distribución del Odómetro')
+    st.plotly_chart(fig_hist_2, use_container_width=True)
 
 if option_scatter:
     st.subheader("Gráfico de Dispersión: Precio vs Año del Modelo")
