@@ -1,1 +1,2 @@
 # Tripleten-Repo
+La presente web appy consta de dos check box. El primero, despliega las gráficas de histograma donde hay dos gráficas, una de ellas muestra la distribución de precios y el otro la distribución del odómetro. Segundo, despliega las gráficas de dispersión donde hay dos gráficas, una de ellas muestra la dispersión del precio vs el año del modelo; por otro lado, se muestra la dispersión del odómetro vs los días en lista.
